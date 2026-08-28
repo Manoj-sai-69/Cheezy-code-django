@@ -29,3 +29,12 @@ def rederhtml(request):
     }
     return render(request,'templatesapp/index.html',context=manoj_details)
 
+
+def filterhtml(request):
+    dic={
+        "age":18,
+        "gender":"male",
+        "eligibility":"You are eligible",
+        "voter_lost":["abhi","sais","gans"]
+    }
+    return render(request,'templatesapp/django.html',context=dic)
