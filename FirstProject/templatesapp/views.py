@@ -2,8 +2,23 @@ from django.shortcuts import render
 from django.urls import path
 from django.http import HttpResponse
 
-# Create your views here.
+
+
+# If your structure is:
+
+# myapp/
+#     templates/
+#         myapp/
+#             home.html
+#             login.html
+# Then:
+# return render(request, 'myapp/home.html')
+# NOT
+# return render(request, '/templates/myapp/home.html')  # ❌
+# and NOT
+# return render(request, '/myapp/home.html')  # ❌
+
+
 def rederhtml(request):
-    html='<html lang="en"><head><title>Document</title></head><body><h1>hey hi this is manoj sai</h1></body></html>'
-    return HttpResponse(html)
+    return render(request,'templatesapp/index.html')
 
