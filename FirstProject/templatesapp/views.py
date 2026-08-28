@@ -20,5 +20,10 @@ from django.http import HttpResponse
 
 
 def rederhtml(request):
-    return render(request,'templatesapp/index.html')
+    manoj_details={
+        "name":"manoj sai",
+        "class":"10th",
+        "age":"21"
+    }
+    return render(request,'templatesapp/index.html',context=manoj_details)
 
