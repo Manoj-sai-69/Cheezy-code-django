@@ -3,8 +3,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>name:{{name}}</h3>
-    <h3>age:{{age}}</h3>
-    <h3>class{{class}}</h3>
+    <h2>Filters in the DTL</h2>
+    <h3>Name(upper case filter) {{name | upper}}</h3>
+    <h3>Name(lower case filter) {{name | lower}}</h3>
+    <h3>Name(title case filter) {{name | title}}</h3>
+    <h3>Name(length filter) {{name | length}}</h3>
+    <h3>Name(truncate chars) {{name | truncatechars:3}}</h3>
+    <h3>Name(truncate words) {{name | truncatewords:3}}</h3><br><br><br><br>
+    <h2>Date and time filters</h2>
+    <h3>Date : {{date | date|default:"nothing"}}</h3>
+    <h3>Time : {{date | time}}</h3>
+    <h3>Date formatted : {{date |date:'D d M Y'}}</h3>
+    <br><br><br>
+    <h2>If </h2>
+    
+
+
+
 </body>
 </html>

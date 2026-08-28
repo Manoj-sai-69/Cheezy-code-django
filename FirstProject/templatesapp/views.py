@@ -18,12 +18,14 @@ from django.http import HttpResponse
 # and NOT
 # return render(request, '/myapp/home.html')  # ❌
 
-
+from datetime import datetime
 def rederhtml(request):
+    dt=datetime.now()
     manoj_details={
         "name":"manoj sai",
-        "class":"10th",
-        "age":"21"
+        "description":"Manoj sai the most worst fellow in whole class",
+        "date":dt,
+        "age":18
     }
     return render(request,'templatesapp/index.html',context=manoj_details)
 
