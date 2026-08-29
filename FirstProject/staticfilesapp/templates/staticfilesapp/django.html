@@ -1,0 +1,17 @@
+{% load static %} 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html,css,js,image</title>
+    <link rel="stylesheet" href="{% static 'staticfilesapp\css\style.css' %}">
+</head>
+<body>
+    <h2>Hey hi how are uh</h2>
+    <button onclick="excutejs()">click me</button>
+    <h3>the below phone image is for the promotion only</h3>
+    <img src="{% static 'staticfilesapp\images\bold.png' %}" alt="bold phone" height="400px">
+
+    <script src="{% static '/staticfilesapp\js\main.js' %}"></script>
+</body>
+</html>
