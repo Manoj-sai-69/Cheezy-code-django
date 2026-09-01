@@ -7,3 +7,4 @@ class Student(models.Model):
     reg_no=models.CharField(max_length=9)
     section=models.CharField(max_length=1)
     mobile=models.CharField(RegexValidator(regex=r'^[6-9]\d{9}$',message="please enter a valid phone number"))
+
