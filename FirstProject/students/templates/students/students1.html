@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all students</title>
+</head>
+<body>
+    <h2>i think this is being rendered</h2>
+    
+    {% if students %}
+    <p>students are comming</p>
+    <ul>
+        {% for student in  students %}
+        <li>{{student.id}}-{{student.name}}-{{student.reg_no}}-{{student.section}}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
+     <p>not comming</p>
+    {% endif %}
+    
+</body>
+</html>
